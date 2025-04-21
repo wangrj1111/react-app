@@ -1,12 +1,91 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <meta name="description" content="现代化企业官网 - 展示我们的创新解决方案">
+    <meta name="keywords" content="科技,创新,解决方案,数字化转型">
+    <title>创新科技 | 引领未来</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="bg-gradient-to-br from-blue-50 to-indigo-100">
+    <!-- 导航栏 -->
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm">
+      <div class="max-w-6xl mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+          <a href="#" class="text-2xl font-bold text-blue-600">TechInnovate</a>
+          <div class="hidden md:flex space-x-8">
+            <a href="#" class="hover:text-blue-600 transition-colors">产品</a>
+            <a href="#" class="hover:text-blue-600 transition-colors">解决方案</a>
+            <a href="#" class="hover:text-blue-600 transition-colors">关于我们</a>
+            <a href="#" class="hover:text-blue-600 transition-colors">联系我们</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 主体内容 -->
+    <main class="max-w-6xl mx-auto px-4 py-16">
+      <div class="text-center mb-16">
+        <h1 class="text-5xl font-bold text-gray-800 mb-6">
+          用科技重新定义<span class="text-blue-600">未来</span>
+        </h1>
+        <p class="text-xl text-gray-600 mb-8">为企业提供领先的数字化转型解决方案</p>
+        <button class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+          立即体验
+        </button>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="text-xl font-semibold mb-4">智能解决方案</h3>
+          <p class="text-gray-600">基于人工智能的行业解决方案，提升企业运营效率</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="text-xl font-semibold mb-4">云端部署</h3>
+          <p class="text-gray-600">安全可靠的云端服务架构，保障业务连续性</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="text-xl font-semibold mb-4">数据洞察</h3>
+          <p class="text-gray-600">深度数据分析，助力企业决策智能化</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white mt-20">
+      <div class="max-w-6xl mx-auto px-4 py-12">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <h4 class="text-lg font-semibold mb-4">TechInnovate</h4>
+            <p class="text-gray-400">引领数字化转型的科技先锋</p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">产品服务</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="#" class="hover:text-white transition-colors">企业解决方案</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">云端平台</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">关注我们</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="hover:text-blue-400 transition-colors">Twitter</a>
+              <a href="#" class="hover:text-blue-400 transition-colors">LinkedIn</a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">联系我们</h4>
+            <p class="text-gray-400">service@techinnovate.com</p>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+          © 2024 TechInnovate. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
